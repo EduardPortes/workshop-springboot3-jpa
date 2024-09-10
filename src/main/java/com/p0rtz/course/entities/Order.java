@@ -1,10 +1,8 @@
 package com.p0rtz.course.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.p0rtz.course.entities.enums.OrderStatus;
 import jakarta.persistence.*;
-import org.antlr.v4.runtime.atn.OrderedATNConfigSet;
 
 import java.time.Instant;
 import java.util.Objects;

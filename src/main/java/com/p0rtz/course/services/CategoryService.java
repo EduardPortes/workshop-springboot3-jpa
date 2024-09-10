@@ -1,7 +1,8 @@
 package com.p0rtz.course.services;
 
+import com.p0rtz.course.entities.Category;
 import com.p0rtz.course.entities.User;
-import com.p0rtz.course.repositories.UserRepository;
+import com.p0rtz.course.repositories.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -9,17 +10,17 @@ import java.util.List;
 import java.util.Optional;
 
 @Component
-public class UserService {
+public class CategoryService {
 
     @Autowired
-    private UserRepository repository;
+    private CategoryRepository repository;
 
-    public List<User> findAll(){
+    public List<Category> findAll(){
         return repository.findAll();
     }
 
-    public User findById(Long id){
-        Optional<User> obj = repository.findById(id);
+    public Category findById(Long id){
+        Optional<Category> obj = repository.findById(id);
         return obj.get();
     }
 
