@@ -1,5 +1,6 @@
 package com.p0rtz.course.entities.pk;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.p0rtz.course.entities.Order;
 import com.p0rtz.course.entities.Product;
 import jakarta.persistence.Embeddable;
